@@ -1,0 +1,27 @@
+name: neuralqr
+description: NeuralQR scanner built for the Liquid AI Hackathon.
+publish_to: 'none'
+
+version: 1.0.0
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # Liquid AI LEAP SDK for downloading and running models on‑device
+  flutter_leap_sdk: ^0.2.3
+  # Camera based QR and barcode scanner
+  mobile_scanner: ^7.2.0
+  # Embedded JavaScript runtime to execute tiny neural nets encoded in QR codes
+  flutter_js: ^0.8.7
+  # Allows locating the device’s document directory where models are stored
+  path_provider: ^2.0.15
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
